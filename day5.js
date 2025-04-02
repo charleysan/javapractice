@@ -2,7 +2,7 @@ console.log("Start");
 
 setTimeout(function(){
   console.log("Timer");
-}) 2000;
+}), 2000;
 
 console.log("End");
 
