@@ -20,7 +20,7 @@ const saveDogImages = () => {
   localStorage.setItem('dog-images', JSON.stringify(dogImages));
 };
 
-// Render the gallery of images
+// Render the gallery of images at boottom
 const renderGallery = () => {
   const gallery = document.createElement('div');
   gallery.id = 'dog-gallery';
@@ -67,7 +67,7 @@ fetchButton.addEventListener('click', async () => {
     console.log('Error', error);
   } finally {
     fetchButton.disabled = false;
-    fetchButton.textContent = 'Get a Random Dog!';
+    fetchButton.textContent = 'Summon Doggo!';
   }
 });
 
